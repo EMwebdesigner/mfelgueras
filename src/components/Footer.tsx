@@ -24,8 +24,8 @@ const Footer = () => {
             {/* Contact Details */}
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-[#EDE3E4]/80 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-[#ff2b40]" />
                 </div>
                 <div>
                   <div className="font-medium text-white mb-1">Dirección</div>
@@ -37,8 +37,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-[#EDE3E4]/80 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-[#ff2b40]" />
                 </div>
                 <div>
                   <div className="font-medium text-white mb-1">Teléfono</div>
@@ -50,8 +50,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-[#EDE3E4]/80 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-[#ff2b40]" />
                 </div>
                 <div>
                   <div className="font-medium text-white mb-1">Email</div>
@@ -63,8 +63,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-[#EDE3E4]/80 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 text-[#ff2b40]" />
                 </div>
                 <div>
                   <div className="font-medium text-white mb-1">Horario de atención</div>
