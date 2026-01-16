@@ -75,8 +75,8 @@ const Services = () => {
               {/* Content */}
               <div className="relative h-full flex flex-col justify-end p-6 z-10">
                 {/* Icon */}
-                <div className="w-14 h-14 bg-primary/20 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-primary/30">
-                  <service.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-white/20 group-hover:bg-white/20 transition-colors">
+                  <service.icon className="w-7 h-7 text-white" />
                 </div>
 
                 {/* Text */}
@@ -88,8 +88,8 @@ const Services = () => {
                 </p>
 
                 {/* Decorative line */}
-                <div className="mt-6 pt-4 border-t border-white/20">
-                  <span className="text-xs font-medium uppercase tracking-wider text-primary group-hover:text-primary-foreground transition-colors">
+                <div className="mt-6 pt-4 border-t border-white/30">
+                  <span className="text-xs font-medium uppercase tracking-wider text-white/90 group-hover:text-white transition-colors">
                     Más información →
                   </span>
                 </div>
