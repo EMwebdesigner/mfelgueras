@@ -1,21 +1,21 @@
 const clients = [
-  { name: "Cliente Industrial 1", initials: "CI" },
-  { name: "Logística SA", initials: "LS" },
-  { name: "Petroquímica Norte", initials: "PN" },
-  { name: "Automotriz ARG", initials: "AA" },
-  { name: "Farmacéutica Plus", initials: "FP" },
-  { name: "Centro Comercial", initials: "CC" },
-  { name: "Depósitos Unidos", initials: "DU" },
-  { name: "Energía Renovable", initials: "ER" },
-  { name: "Metalúrgica Sur", initials: "MS" },
-  { name: "Alimentos Corp", initials: "AC" },
-  { name: "Textil Premium", initials: "TP" },
-  { name: "Construcciones Max", initials: "CM" },
+  { name: "Cliente Industrial", logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=100&fit=crop&q=80" },
+  { name: "Logística SA", logo: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=200&h=100&fit=crop&q=80" },
+  { name: "Petroquímica Norte", logo: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=200&h=100&fit=crop&q=80" },
+  { name: "Automotriz ARG", logo: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=200&h=100&fit=crop&q=80" },
+  { name: "Farmacéutica Plus", logo: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=100&fit=crop&q=80" },
+  { name: "Centro Comercial", logo: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&h=100&fit=crop&q=80" },
+  { name: "Depósitos Unidos", logo: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=200&h=100&fit=crop&q=80" },
+  { name: "Energía Renovable", logo: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=200&h=100&fit=crop&q=80" },
+  { name: "Metalúrgica Sur", logo: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=200&h=100&fit=crop&q=80" },
+  { name: "Alimentos Corp", logo: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=200&h=100&fit=crop&q=80" },
+  { name: "Textil Premium", logo: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=200&h=100&fit=crop&q=80" },
+  { name: "Construcciones Max", logo: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=200&h=100&fit=crop&q=80" },
 ];
 
 const Clients = () => {
   return (
-    <section id="clientes" className="section-padding bg-muted/30">
+    <section id="clientes" className="section-padding bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -31,25 +31,45 @@ const Clients = () => {
           </p>
         </div>
 
-        {/* Clients Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="client-logo aspect-[3/2]"
-            >
-              <div className="text-center">
-                <div className="w-12 h-12 mx-auto mb-2 bg-industrial-steel/10 rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold text-industrial-steel">
-                    {client.initials}
-                  </span>
+        {/* Logo Carousel */}
+        <div className="relative">
+          {/* Gradient overlays for smooth edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-muted/30 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-muted/30 to-transparent z-10 pointer-events-none" />
+          
+          {/* Scrolling container */}
+          <div className="flex animate-scroll">
+            {/* First set of logos */}
+            {clients.map((client, index) => (
+              <div
+                key={`first-${index}`}
+                className="flex-shrink-0 mx-6 group"
+              >
+                <div className="w-40 h-24 bg-card border border-border rounded-lg flex items-center justify-center p-4 transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-w-full max-h-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  />
                 </div>
-                <span className="text-xs text-muted-foreground font-medium">
-                  {client.name}
-                </span>
               </div>
-            </div>
-          ))}
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {clients.map((client, index) => (
+              <div
+                key={`second-${index}`}
+                className="flex-shrink-0 mx-6 group"
+              >
+                <div className="w-40 h-24 bg-card border border-border rounded-lg flex items-center justify-center p-4 transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-w-full max-h-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Testimonial */}
