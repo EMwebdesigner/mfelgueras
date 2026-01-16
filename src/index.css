@@ -22,8 +22,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    /* Primary - Dark Burgundy/Red */
-    --primary: 0 63% 31%;
+    /* Primary - Vibrant Red */
+    --primary: 354 100% 58%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Steel Gray */
@@ -45,7 +45,7 @@
     /* Borders & Inputs */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 0 63% 31%;
+    --ring: 354 100% 58%;
 
     --radius: 0.375rem;
 
@@ -53,11 +53,11 @@
     --industrial-dark: 220 13% 18%;
     --industrial-steel: 215 16% 47%;
     --industrial-light: 220 14% 96%;
-    --burgundy-deep: 0 70% 25%;
-    --burgundy-hover: 0 63% 38%;
+    --burgundy-deep: 354 100% 50%;
+    --burgundy-hover: 354 100% 65%;
 
     /* Hero Overlay */
-    --hero-overlay: linear-gradient(135deg, hsla(0, 70%, 20%, 0.85) 0%, hsla(220, 13%, 10%, 0.9) 100%);
+    --hero-overlay: linear-gradient(135deg, hsla(354, 100%, 40%, 0.85) 0%, hsla(220, 13%, 10%, 0.9) 100%);
 
     /* Sidebar - keeping defaults */
     --sidebar-background: 0 0% 98%;
@@ -67,7 +67,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 0 63% 31%;
+    --sidebar-ring: 354 100% 58%;
   }
 
   .dark {
