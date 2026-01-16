@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -76,16 +76,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* WhatsApp Button */}
-            <a
-              href="https://wa.me/5411XXXXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 mt-10 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-lg hover:bg-[#20BA5C] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Contactar por WhatsApp
-            </a>
           </div>
 
           {/* Contact Form */}
