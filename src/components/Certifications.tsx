@@ -94,8 +94,8 @@ const Certifications = () => {
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-end p-6 z-10">
                   {/* Icon */}
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-white/20 group-hover:bg-white/20 transition-colors">
-                    <cert.icon className="w-6 h-6 text-burgundy-400" />
+                  <div className="w-12 h-12 bg-[#EDE3E4]/80 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-white/20 group-hover:bg-[#EDE3E4] transition-colors">
+                    <cert.icon className="w-6 h-6 text-[#ff2b40]" />
                   </div>
                   
                   {/* Text */}
