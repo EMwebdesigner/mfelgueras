@@ -6,30 +6,35 @@ const services = [
     title: "Ingeniería en sistemas contra incendios",
     description:
       "Desarrollo de proyectos integrales bajo normativas NFPA e IRAM. Cálculo hidráulico, dimensionamiento de redes y especificaciones técnicas para instalaciones industriales y comerciales.",
+    backgroundImage: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Radio,
     title: "Sistemas de detección",
     description:
       "Diseño e instalación de sistemas de detección temprana: detectores de humo, temperatura y llama. Centrales de alarma analógicas y direccionables con monitoreo remoto.",
+    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Flame,
     title: "Sistemas de extinción",
     description:
       "Redes de sprinklers, sistemas de diluvio, espuma, CO2 y agentes limpios. Gabinetes de mangueras, hidrantes y tanques de reserva según requerimientos específicos del riesgo.",
+    backgroundImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Settings,
     title: "Mantenimiento preventivo y correctivo",
     description:
       "Programas de mantenimiento periódico según normas vigentes. Pruebas hidráulicas, verificación de componentes, recarga de extintores y actualización de sistemas existentes.",
+    backgroundImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Package,
     title: "Provisión de equipos certificados",
     description:
       "Suministro de equipos y materiales con certificación de calidad: extintores, mangueras, válvulas, detectores, rociadores y accesorios de primeras marcas nacionales e importadas.",
+    backgroundImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -56,26 +61,38 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="service-card group"
+              className="group relative overflow-hidden rounded-xl min-h-[380px] transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
-              {/* Icon */}
-              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/15 transition-colors">
-                <service.icon className="w-7 h-7 text-primary" />
-              </div>
+              {/* Background Image */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{ backgroundImage: `url(${service.backgroundImage})` }}
+              />
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-industrial-dark via-industrial-dark/80 to-industrial-dark/40 transition-opacity duration-300 group-hover:from-industrial-dark group-hover:via-industrial-dark/90" />
 
               {/* Content */}
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
-              </p>
+              <div className="relative h-full flex flex-col justify-end p-6 z-10">
+                {/* Icon */}
+                <div className="w-14 h-14 bg-primary/20 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-primary/30">
+                  <service.icon className="w-7 h-7 text-primary" />
+                </div>
 
-              {/* Decorative line */}
-              <div className="mt-6 pt-6 border-t border-border">
-                <span className="text-xs font-medium uppercase tracking-wider text-primary">
-                  Más información →
-                </span>
+                {/* Text */}
+                <h3 className="text-xl font-semibold text-white mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+
+                {/* Decorative line */}
+                <div className="mt-6 pt-4 border-t border-white/20">
+                  <span className="text-xs font-medium uppercase tracking-wider text-primary group-hover:text-primary-foreground transition-colors">
+                    Más información →
+                  </span>
+                </div>
               </div>
             </div>
           ))}
