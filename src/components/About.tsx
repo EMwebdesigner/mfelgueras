@@ -86,7 +86,7 @@ const About = () => {
             ))}
 
             {/* Stats Card */}
-            <div className="p-8 bg-primary text-primary-foreground rounded-lg">
+            <div className="p-8 bg-[#d62433] text-white rounded-lg">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <div className="text-4xl font-bold">+30</div>
