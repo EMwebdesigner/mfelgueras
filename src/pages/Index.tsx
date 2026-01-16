@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Certifications from "@/components/Certifications";
 import Clients from "@/components/Clients";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <Clients />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
