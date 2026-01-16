@@ -59,7 +59,9 @@ const About = () => {
                 "Capacitación y asesoramiento continuo",
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 text-foreground">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <div className="w-6 h-6 bg-[#EDE3E4]/80 rounded flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-[#ff2b40]" />
+                  </div>
                   <span>{item}</span>
                 </li>
               ))}
@@ -73,8 +75,8 @@ const About = () => {
                 key={index}
                 className="flex gap-5 p-6 bg-muted/50 rounded-lg border border-border hover:border-primary/20 transition-colors"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 bg-[#EDE3E4]/80 rounded-lg flex items-center justify-center">
+                  <feature.icon className="w-6 h-6 text-[#ff2b40]" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
