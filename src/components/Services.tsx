@@ -108,11 +108,9 @@ const Services = () => {
             y brindarle una propuesta personalizada.
           </p>
           <a
-            href="#contacto"
-            onClick={(e) => {
-              e.preventDefault();
-              document.querySelector("#contacto")?.scrollIntoView({ behavior: "smooth" });
-            }}
+            href="https://wa.me/5491158486424?text=Hola%2C%20buen%20d%C3%ADa.%20Me%20contacto%20para%20solicitar%20un%20presupuesto%20para%20un%20proyecto.%20Me%20gustar%C3%ADa%20coordinar%20el%20an%C3%A1lisis%20de%20los%20requerimientos%20t%C3%A9cnicos%20y%20recibir%20una%20propuesta%20personalizada.%20Quedo%20atento%2Fa.%20Gracias."
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-hero inline-flex"
           >
             Contactar ahora
