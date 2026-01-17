@@ -65,12 +65,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="animate-fade-in-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() => scrollToSection("#contacto")}
+            <a
+              href="https://wa.me/5491158486424"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-hero"
             >
               Solicitar asesoramiento técnico
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection("#servicios")}
               className="btn-hero-outline"
