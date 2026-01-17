@@ -2,9 +2,9 @@ import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80",
-  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80",
+  "https://media.istockphoto.com/id/1844359699/es/foto/tuber%C3%ADas-de-cabecera-zona-de-v%C3%A1lvulas-y-sistema-de-control-de-alarma-contra-incendios-en.jpg?s=612x612&w=0&k=20&c=ybkiSQH_rrU4i9hAFd6Agnd9LAvEYPZi3oRuEbDO-qk=",
+  "https://media.istockphoto.com/id/2006177264/es/foto/el-ingeniero-inspecciona-el-equipo-de-seguridad-del-sistema-de-extinci%C3%B3n-de-incendios.jpg?s=612x612&w=0&k=20&c=BOnLB6l2OVmJ4Pdq3rZtOZnt8psUnYcYBkC_tVWwJ0c=",
+  "https://media.istockphoto.com/id/1447866133/es/foto/sistema-de-extinci%C3%B3n-de-incendios-de-agente-limpio.jpg?s=612x612&w=0&k=20&c=Nlbmpa0bYWqCw-Vu27jJiya5jIDoo-1VXrxLOEX5_Ss=",
 ];
 
 const Hero = () => {

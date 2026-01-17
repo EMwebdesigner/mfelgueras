@@ -13,14 +13,14 @@ const services = [
     title: "Sistemas de detección",
     description:
       "Diseño e instalación de sistemas de detección temprana: detectores de humo, temperatura y llama. Centrales de alarma analógicas y direccionables con monitoreo remoto.",
-    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    backgroundImage: "https://media.istockphoto.com/id/949716894/es/foto/ingeniero-de-control-de-sistema-de-control-de-incendio-industrial-regulador-la-alarma-de.jpg?s=612x612&w=0&k=20&c=B5XckfkkQ19oDMCKAmHo3OIc18jbA01OilQH2HxIxG8=",
   },
   {
     icon: Flame,
     title: "Sistemas de extinción",
     description:
       "Redes de sprinklers, sistemas de diluvio, espuma, CO2 y agentes limpios. Gabinetes de mangueras, hidrantes y tanques de reserva según requerimientos específicos del riesgo.",
-    backgroundImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80",
+    backgroundImage: "https://media.istockphoto.com/id/538863166/es/foto/rociadores-de-agua-y-sistema-de-alarma-contra-incendios.jpg?s=612x612&w=0&k=20&c=vdICoNBOYimfqsch1ixXeO8fc1ayQiHKxNzHQURaFAQ=",
   },
   {
     icon: Settings,
@@ -34,7 +34,7 @@ const services = [
     title: "Provisión de equipos certificados",
     description:
       "Suministro de equipos y materiales con certificación de calidad: extintores, mangueras, válvulas, detectores, rociadores y accesorios de primeras marcas nacionales e importadas.",
-    backgroundImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+    backgroundImage: "https://media.istockphoto.com/id/1950310010/es/foto/seguridad-de-alarma-contra-incendios-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=DR38PaXeF9lehjhk1QzCRhJhr24ptZQi-Ywk_f4-DwE=",
   },
 ];
 
