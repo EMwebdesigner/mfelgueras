@@ -89,13 +89,15 @@ const Header = () => {
           {/* Contact Button (Desktop) */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+5411XXXXXXXX"
+              href="https://wa.me/5491158486424"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`flex items-center gap-2 text-sm font-medium transition-colors duration-200 ${
                 isScrolled ? "text-primary" : "text-white"
               }`}
             >
               <Phone className="w-4 h-4" />
-              <span>(011) XXXX-XXXX</span>
+              <span>+54 9 11 5848-6424</span>
             </a>
           </div>
 
@@ -127,11 +129,13 @@ const Header = () => {
                 </button>
               ))}
               <a
-                href="tel:+5411XXXXXXXX"
+                href="https://wa.me/5491158486424"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-primary"
               >
                 <Phone className="w-4 h-4" />
-                <span>(011) XXXX-XXXX</span>
+                <span>+54 9 11 5848-6424</span>
               </a>
             </nav>
           </div>
