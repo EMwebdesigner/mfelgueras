@@ -66,7 +66,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="animate-fade-in-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/5491158486424"
+              href="https://wa.me/5491158486424?text=Hola%2C%20buen%20d%C3%ADa.%20Me%20comunico%20para%20solicitar%20asesoramiento%20t%C3%A9cnico%20sobre%20sus%20soluciones%20y%20servicios.%20Quedo%20a%20disposici%C3%B3n%20para%20ampliar%20los%20requerimientos.%20Muchas%20gracias."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero"
