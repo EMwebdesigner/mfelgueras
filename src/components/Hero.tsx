@@ -1,6 +1,23 @@
 import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+
+const heroImages = [
+  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80",
+  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80",
+  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80",
+];
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -10,27 +27,22 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
+      {/* Image Slider Background */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80"
-        >
-          {/* Industrial environment / fire safety video */}
-          <source
-            src="https://videos.pexels.com/video-files/5532766/5532766-uhd_2560_1440_25fps.mp4"
-            type="video/mp4"
-          />
-          {/* Fallback - industrial pipes/water system */}
-          <source
-            src="https://videos.pexels.com/video-files/856947/856947-hd_1920_1080_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Hero background ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
         
         {/* Overlay Gradient */}
         <div 
